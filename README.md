@@ -2,6 +2,12 @@
 
 Demo showing how to create a Shopify Multipass token, and subsequent redirect url.
 
+## Dependencies
+
+- crypto
+- encrypt
+
+
 ## Important Note About Customer Payload
 
 The most frustrating part of this research was working through the customer `identifier` field. If the customer record in Shopify was created with the `identifier` field, be sure to include it in the token request.
