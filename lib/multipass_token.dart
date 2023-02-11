@@ -4,7 +4,7 @@ import 'package:crypto/crypto.dart';
 import 'package:encrypt/encrypt.dart';
 
 class MultipassToken {
-  /// Creates a Multipass token from a given [secret] and [data]. The resulting token ca n be used to create the Multipass redirect url
+  /// Creates a Multipass token from a given [multipassSecret] and [customerJson]. The resulting token can be used to create the Multipass redirect url
   static String createMutlipassToken({required String multipassSecret, required Map<String, dynamic> customerJson}) {
     final customerJsonText = jsonEncode(customerJson);
 
